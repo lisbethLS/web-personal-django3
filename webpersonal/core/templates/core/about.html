@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}  
+
+{% block title %}Acerca De{% endblock %}
+
+{% block background%}{% load static %}{% static 'core/img/aboot-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+      <h1>Acerca de</h1>
+      <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+      <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/perfil-bg.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Lisbeth Solis</h2>   
+          <p>Nacio en Los Rios Buena Fe, el 3 de Diciembre del 2000 en la clinica maternidad Panamericana</p>
+          <p>Le gusta todo tipo de musica (menos las musicas ñengosas) y salir aunque no le den permiso xD</p>
+        </div>
+      </div>  
+    </div>
+{% endblock %}
